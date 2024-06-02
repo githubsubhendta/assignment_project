@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.card {
+  overflow: hidden;
+  position: relative;
+}
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgb(252, 58, 58);
+  border-radius: 15px;
+  transition: 4ms;
+}
+.card:hover .card-body {
+  right: 0;
+}
+.whiteImage {
+  filter: brightness(0) invert(1);
+}
+.icon_image {
+  filter: brightness(1) invert(0);
+  color: red;
+}
